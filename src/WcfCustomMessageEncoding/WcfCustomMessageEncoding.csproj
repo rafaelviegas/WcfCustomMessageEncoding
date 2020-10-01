@@ -1,7 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>WcfCustomMessageEncoding</Title>
+    <Description>This package provides a simple implementation to custom text message encoder using Windows Communication Foundation (WCF).</Description>
+    <Authors>Rafael Viegas</Authors>
+    <Company />
+    <PackageProjectUrl>https://github.com/rafaelviegas/WcfCustomMessageEncoding</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rafaelviegas/WcfCustomMessageEncoding</RepositoryUrl>
+    <PackageTags>aspnetcore wcf binding utf-8 iso-8859-1</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Copyright>Copyright (c) 2020 Rafael Viegas</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
