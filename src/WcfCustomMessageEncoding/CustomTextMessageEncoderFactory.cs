@@ -15,21 +15,9 @@ namespace WcfCustomMessageEncoding
             _encoder = new CustomTextMessageEncoder(this);
         }
 
-        public override MessageEncoder Encoder
-        {
-            get
-            {
-                return _encoder;
-            }
-        }
+        public override MessageEncoder Encoder => _encoder;
 
-        public override MessageVersion MessageVersion
-        {
-            get
-            {
-                return _version;
-            }
-        }
+        public override MessageVersion MessageVersion => _version;
 
         internal string MediaType { get; }
 
